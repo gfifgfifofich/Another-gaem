@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://clu4gxf3o5j1n"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hdp3o"]
+
+[sub_resource type="Sky" id="Sky_45sr2"]
+sky_material = SubResource("ProceduralSkyMaterial_hdp3o")
+
+[sub_resource type="Environment" id="Environment_uib0s"]
+background_mode = 2
+sky = SubResource("Sky_45sr2")
+
+[sub_resource type="BoxMesh" id="BoxMesh_ilxlu"]
+size = Vector3(7.285, 0.405, 6.275)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6hqvm"]
+size = Vector3(2.06, 0.405, 0.895)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_uib0s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_ilxlu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.991151, 0.0306529, 0.129149, -0.0587644, 0.973758, 0.21987, -0.11902, -0.225513, 0.966943, 0, 1.06698, -1.11617)
+mesh = SubResource("BoxMesh_6hqvm")
