@@ -2,12 +2,13 @@
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hdp3o"]
 
-[sub_resource type="Sky" id="Sky_45sr2"]
+[sub_resource type="Sky" id="Sky_is7wh"]
 sky_material = SubResource("ProceduralSkyMaterial_hdp3o")
 
 [sub_resource type="Environment" id="Environment_uib0s"]
 background_mode = 2
-sky = SubResource("Sky_45sr2")
+sky = SubResource("Sky_is7wh")
+fog_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_ilxlu"]
 size = Vector3(7.285, 0.405, 6.275)
